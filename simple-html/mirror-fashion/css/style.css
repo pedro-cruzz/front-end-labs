@@ -1,7 +1,16 @@
+:root{
+    --color-base: #333;
+    --color-base-figure-background: #f2eded;
+    --color-figure-border: #ccc;
+    --font-body: "Roboto", sans-serif;
+    --font-title: "Emblema One", sans-serif;
+    --font-subtitle: "Oswald", sans-serif;
+    --font-figcaption: "Lora", sans-serif;
+}
 body {
-    color: #333333;
-    font-family: 'Lucida Sans', 'Lucida Grande',sans-serif;
+    color: var(--color-base);
     margin-left: auto;
+    font-family: var(--font-body);
     margin-right: auto;
     width: 940px;
 }
@@ -9,21 +18,24 @@ body {
 h1 {
     background-image: url("../img/sobre-background.jpg");
     padding: 10px;
+    font-family: var(--font-title);
 }
 
 h2 {
-    border-bottom: 2px groove #333333;
+    border-bottom: 2px groove var(--color-base);
+    font-family: var(--font-subtitle);
     margin-top: 30px;
 }
 figure {
-    background-color: #F2EDED;
-    border: 1px solid #ccc;
+    background-color: var(--color-base-figure-background);
+    border: 1px solid var(--color-figure-border);
     text-align: center;
     padding: 15px;
     margin: 30px;
 }
 figcaption {
     font-style: italic;
+    font-family: var(--font-figcaption);
     margin-top: 10px;
 }
 
