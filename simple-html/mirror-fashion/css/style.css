@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --color-base: #333;
     --color-base-figure-background: #f2eded;
