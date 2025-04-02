@@ -2,33 +2,118 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
-
-header {
-    margin-bottom: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.icon {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    margin: 10px;
+label {
+    margin-bottom: 7px;
 }
 
-.title-register , .title2 {
-    position: relative;
-    font-size: 40px;
-    display: flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-main {
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px; 
-    width: 40%;
+    padding: 20px;
     justify-content: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    flex-direction: column;
+}
+
+.title-register {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.icon-header {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.icon-header h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon-ticket {
+    width: 18px;
+}
+
+.icon {
+    width: 150px; 
+    height: 80px;
+}
+
+main {
+    width: 50%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    background-color: #d9c7a3;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reset {
+    background: #ff4d4d;
+    width: 50%;
+}
+
+.submit {
+    background: #007bff;
+    width: 50%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    max-width: 600px;
 }
