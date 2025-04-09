@@ -5,6 +5,8 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 label {
     margin-bottom: 7px;
 }
@@ -57,13 +59,13 @@ main {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 h3 {
@@ -71,6 +73,7 @@ h3 {
     padding: 8px;
     border-radius: 5px;
     font-size: 18px;
+
 }
 
 label {
@@ -78,6 +81,7 @@ label {
     font-size: 14px;
     font-weight: bold;
     margin-top: 10px;
+    gap: 15px;
 }
 
 input, select {
