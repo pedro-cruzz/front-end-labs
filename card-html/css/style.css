@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "noto sans", sans-serif;
+    font-family: "Noto Sans", sans-serif;
 }
 
 :root {
@@ -10,7 +10,7 @@
     --secondary-color: #3B8BFF;
     --text-color: #4c4c4c;
     --background-color: #dde9fa;
-    --backgroun-color-card: #ffffff;
+    --card-background-color: #ffffff;
 }
 
 html, body {
@@ -33,7 +33,7 @@ body {
 }
 
 .card {
-    background-color: var(--backgroun-color-card);
+    background-color: var(--card-background-color);
     border-radius: 10px;
     padding: 20px;
     width: 100%;
@@ -44,14 +44,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    box-sizing: border-box;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     position: relative;
     text-align: center;
-    left: 20px;
-    right: 20px;
+    transition: all 0.3s ease;
 }
 
+.card:hover {
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
 
 .card h2 {
     margin-top: 30px;
@@ -69,24 +72,18 @@ body {
 
 .card ul {
     list-style: none;
-    padding: 0;
-    margin: 60px 0 30px 0;
+    margin: 60px 0 30px;
     color: var(--text-color);
     width: 80%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     gap: 20px;
-    max-width: 100%;
 }
-
-
 
 .card ul li {
     list-style: url(https://img.icons8.com/?size=20&id=19342&format=png&color=4c4c4c);
     font-size: 20px;
-    align-items: flex-start;
 }
 
 .card button {
@@ -104,14 +101,7 @@ body {
 
 .card button:hover {
     background-color: var(--secondary-color);
-    color:var(--backgroun-color-card);
-}
-
-.card:hover {
-    border: 3px solid var(--secondary-color);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
-    transition: all 0.3s ease;
+    color: var(--card-background-color);
 }
 
 
