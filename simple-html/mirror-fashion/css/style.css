@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -68,20 +62,94 @@ p {
   width: 550px;
 }
 
-footer{
+footer {
+  display: flex;
   color: #777;
   margin: 30px 0;
   padding: 30px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 footer img {
   vertical-align: middle;
   margin-right: 30px 0;
   width: 94px;
+  margin: auto;
 }
 
 #familia-pelho {
   float: right;
   margin-right: 0 0 10px 10px;
   width: 200px;
+}
+
+ul {
+  padding: 0 45px;
+}
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    text-align: justify;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+
+  p {
+    padding: 0 20px;
+    text-indent: 10px;
+    text-align: justify;
+  }
+
+  figure {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  #centro-distribuicao {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #familia-pelho {
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer img {
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    height: 50px;
+  }
 }
