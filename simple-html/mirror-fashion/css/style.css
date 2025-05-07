@@ -52,8 +52,10 @@ figcaption {
 }
 
 p {
-  padding: 0 45px;
+  font-family: var(--font-body);
+  padding: 0 60px;
   text-indent: 15px;
+  font-size: 20px;
 }
 
 #centro-distribuicao {
@@ -86,6 +88,17 @@ footer img {
 
 ul {
   padding: 0 45px;
+  font-size: 20px;
+  margin: 0 45px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 480px) {
