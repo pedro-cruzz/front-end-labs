@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue",  "sans-serif";
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #cccccc, #505050);
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.input-section button{
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+
+.input-section input{
+    width: 320px;
+    height: 60px;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 50px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+}
+
+.numbers-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.numbers-buttons input {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.call-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.call-buttons button {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}   
+
+.call-buttons button:hover {
+   transform: scale(1.05); ;
+}
+
+.numbers-buttons input:hover {
+   transform: scale(1.05); ;
+}
+
+.input-section button:hover {
+   transform: scale(1.05);
+}
+
+
+.call-buttons button:active {
+    transform: scale(0.95);
+}
+
+.numbers-buttons input:active {
+    transform: scale(0.95);
+}
+
+.input-section button:active {
+   transform: scale(0.95);
+}
