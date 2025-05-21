@@ -92,6 +92,10 @@ ul {
   margin: 0 45px;
 }
 
+/* 
+ * responsividade final
+ */
+
 @media (max-width: 1024px) {
   body {
     width: 100%;
