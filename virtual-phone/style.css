@@ -11,7 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #cccccc, #505050);
+    background: linear-gradient(to bottom, #253eff, #576aff);
 }
 
 h1 {
@@ -27,6 +27,7 @@ h1 {
     justify-content: center;
     margin-top: 20px;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .input-section button{
@@ -35,15 +36,21 @@ h1 {
     cursor: pointer;
 }
 
+.main {
+    background-color: #a4a4a4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 
 .input-section input{
-    width: 320px;
+    width: 310px;
     height: 60px;
     border-radius: 5px;
     padding: 10px;
-    margin-right: 50px;
     font-size: 25px;
-    border: 1px solid #ccc;
+    border: none;
+    background-color: #ccc;
 }
 
 .numbers-buttons {
@@ -58,7 +65,7 @@ h1 {
     width: 100px;
     height: 50px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #a4a4a4;
     font-size: 1.5rem;
     margin-bottom: 20px;
     cursor: pointer;
