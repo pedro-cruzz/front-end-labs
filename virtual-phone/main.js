@@ -8,6 +8,9 @@ numbers.forEach(function (button) {
   button.addEventListener("click", function () {
     // Adiciona o valor do botão ao campo de telefone
     input.value += button.value;
+    if (input.value.length > 11) {
+      input.value = input.value.slice(0, 11); // Limita a 11 dígitos
+    }
   });
 });
 
@@ -32,30 +35,37 @@ callButton.addEventListener("click", function () {
   if (existingAlert) existingAlert.remove();
 
   // Cria uma caixa de alerta personalizada
-  let alertBox = document.createElement("div");
-  alertBox.id = "custom-alert";
-  alertBox.textContent = "LIgando para o número " + input.value;
- Object.assign(alertBox.style, {
+  let alertBoxGreen = document.createElement("div");
+  alertBoxGreen.id = "custom-alert";
+  alertBoxGreen.textContent = "LIgando para o número " + input.value;
+  Object.assign(alertBoxGreen.style, {
     position: "fixed",
-    top: "90%",
+    bottom: "40px",
     left: "50%",
-    transform: "translate(-50%, -50%)",
-    background: "#fff",
-    color: "#333",
-    padding: "24px 40px",
-    borderRadius: "12px",
-    fontSize: "1.5rem",
+    transform: "translateX(-50%)",
+    background: " rgb(132, 245, 76)",
+    color: "#fff",
+    padding: "28px 48px",
+    borderRadius: "18px",
+    fontSize: "2rem",
     zIndex: 9999,
-    color: "#000",
     textAlign: "center",
-    fontFamily: "Bebas Neue",
+    fontFamily: "'Bebas Neue', Arial, sans-serif",
+    boxShadow: "0 8px 32px rgba(78,84,200,0.25)",
+    letterSpacing: "2px",
+    border: "2px solid #fff",
+    transition: "all 0.3s",
+    opacity: "0.97"
   });
+
+// Adiciona a caixa de alerta ao corpo da página
+  document.body.appendChild(alertBoxGreen);
+
 
   // Seleciona o botão de desligar (hangup)
   let hangupButton = document.querySelector("#hangup");
 
-  // Adiciona a caixa de alerta ao corpo da página
-  document.body.appendChild(alertBox);
+  
 
   // Cria um intervalo (aqui está vazio, mas pode ser usado para animação)
   callingInterval = setInterval(function () {
@@ -66,6 +76,6 @@ callButton.addEventListener("click", function () {
   hangupButton.addEventListener("click", function () {
     clearInterval(callingInterval);
     callingInterval = null;
-    alertBox.remove();
+    alertBoxGreen.remove();
   });
 });
