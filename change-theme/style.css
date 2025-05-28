@@ -27,6 +27,7 @@ body.light-theme {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -35,12 +36,15 @@ h1 {
 }
 
 p {
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
 
 #button-toggle-theme {
-    background: var(--button-bg-light);
-    color: var(--button-text-light);
+    background: url("https://img.icons8.com/?size=100&id=62034&format=png&color=000000");
+    height: 100px;
+    width: 100px;
+    background-color: var(--button-bg-light);
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -51,7 +55,7 @@ p {
 }
 
 #button-toggle-theme:hover {
-    background: #bdbdbd;
+    transform: scale(1.15);
 }
 
 section {
@@ -73,21 +77,28 @@ body.dark-theme {
     transition: background 0.3s, color 0.3s;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    align-items: center;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 body.dark-theme #button-toggle-theme {
-    background: var(--button-bg-dark);
+    background: url("https://img.icons8.com/?size=100&id=ckLpqXIiK1LY&format=png&color=000000");
+    height: 100px;
+    width: 100px;
     color: var(--button-text-dark);
     box-shadow: 0 2px 8px rgba(0,0,0,0.25);
     transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    background-color: var(--button-bg-dark);
 }
 
 body.dark-theme #button-toggle-theme:hover {
-    background: #444;
+    transform: scale(1.15);
+    
 }
 
 body.dark-theme section {
@@ -105,4 +116,7 @@ h1.dark-theme {
 
 p.dark-theme {
     margin-bottom: 1.5rem;
+}
+body, section, #button-toggle-theme, h1, p {
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s, transform 0.3s;
 }
