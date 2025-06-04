@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta API GitHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Consulta de Usuário GitHub</h1>
+    </header>
+    <section class="search-section">
+        <label for="git_id">Usuário GitHub:</label>
+        <input type="text" id="git_id" placeholder="Digite o nome de usuário">
+        <button id="search-btn" aria-label="Buscar usuário">
+            <span>🔎</span>
+        </button>
+    </section>
+    <main class="tabela">
+        <div class="rotulo-coluna">Nome</div>
+        <div class="rotulo-coluna">Bio</div>
+        <div class="rotulo-coluna">Seguidores</div>
+        <div class="rotulo-coluna">Localização</div>
+        <div class="rotulo-coluna">Avatar</div>
+
+        <div class="celula" id="name"></div>
+        <div class="celula" id="bio"></div>
+        <div class="celula" id="followers"></div>
+        <div class="celula" id="location"></div>
+        <div class="celula">
+            <img id="avatar" alt="Avatar do usuário" style="max-width:80px; border-radius:50%;">
+        </div>
+    </main>
+    <footer>
+        <small>Desenvolvido para fins educacionais</small>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
